@@ -14,15 +14,12 @@ jobs:
       fail-fast: true
       matrix:
         php: [8.2, 8.3, 8.4]
-        laravel: [10.*, 11.*, 12.*]
+        laravel: [11.*, 12.*]
         filament: [3.*, 4.*]
         exclude:
-          # Laravel 10 doesn't support PHP 8.4
-          - php: 8.4
-            laravel: 10.*
-          # Filament 4 requires Laravel 11+
+          # Filament 4 requires Laravel 11+ only (not 12 yet)
           - filament: 4.*
-            laravel: 10.*
+            laravel: 12.*
           # Filament 3 doesn't support Laravel 12
           - filament: 3.*
             laravel: 12.*
