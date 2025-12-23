@@ -1,0 +1,36 @@
+# Dependencies
+/vendor
+/node_modules
+
+# Build artifacts
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+
+# Environment files
+.env
+.env.*
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated files
+composer.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Test coverage
+coverage
+.phpunit.result.cache
+
+# Compiled assets
+/resources/dist

@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/common.sh"
+
+echo "📋 Validating commit message..."
+
+if command_exists npx; then
+  npx --no-install commitlint --edit "$1"
+else
+  echo "npx not found. Skipping commit message validation"
+fi

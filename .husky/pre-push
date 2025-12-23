@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/common.sh"
+
+echo "🔍 Running code checks..."
+run_composer_script check
+
+echo "✅ All checks passed!"
