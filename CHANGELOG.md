@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/danie1net0/filament-captcha/compare/v1.0.0...v1.0.1) (2025-12-23)
+
+
+### Bug Fixes
+
+* correct package name and badges to danie1net0 ([b974492](https://github.com/danie1net0/filament-captcha/commit/b9744927f2b6546d03dcf7577f10520c41384f2a))
+
 # 1.0.0 (2025-12-23)
 
 
