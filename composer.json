@@ -1,5 +1,5 @@
 {
-  "name": "danie1net0/filament-captcha",
+  "name": "ddr/filament-captcha",
   "description": "Multi-provider captcha integration for Filament forms (hCaptcha, reCAPTCHA v2/v3, Turnstile)",
   "keywords": [
     "filament",
