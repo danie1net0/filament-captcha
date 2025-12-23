@@ -1,10 +1,10 @@
 # Filament Captcha
 
-[![Latest Version](https://img.shields.io/packagist/v/ddr/filament-captcha.svg?style=flat-square)](https://packagist.org/packages/ddr/filament-captcha)
-[![Total Downloads](https://img.shields.io/packagist/dt/ddr/filament-captcha.svg?style=flat-square)](https://packagist.org/packages/ddr/filament-captcha)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ddr/filament-captcha/tests.yml?branch=master&label=tests&style=flat-square)](https://github.com/ddr/filament-captcha/actions?query=workflow%3Atests+branch%3Amaster)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ddr/filament-captcha/code-style.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/ddr/filament-captcha/actions?query=workflow%3A"code-style"+branch%3Amaster)
-[![License](https://img.shields.io/packagist/l/ddr/filament-captcha.svg?style=flat-square)](https://packagist.org/packages/ddr/filament-captcha)
+[![Latest Version](https://img.shields.io/packagist/v/danie1net0/filament-captcha.svg?style=flat-square)](https://packagist.org/packages/danie1net0/filament-captcha)
+[![Total Downloads](https://img.shields.io/packagist/dt/danie1net0/filament-captcha.svg?style=flat-square)](https://packagist.org/packages/danie1net0/filament-captcha)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/danie1net0/filament-captcha/tests.yml?branch=master&label=tests&style=flat-square)](https://github.com/danie1net0/filament-captcha/actions?query=workflow%3Atests+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/danie1net0/filament-captcha/code-style.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/danie1net0/filament-captcha/actions?query=workflow%3A"code-style"+branch%3Amaster)
+[![License](https://img.shields.io/github/license/danie1net0/filament-captcha.svg?style=flat-square)](https://github.com/danie1net0/filament-captcha/blob/master/LICENSE)
 
 Multi-provider captcha integration for Filament forms, supporting hCaptcha, reCAPTCHA v2, reCAPTCHA v3, and Cloudflare Turnstile.
 

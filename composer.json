@@ -1,5 +1,5 @@
 {
-  "name": "ddr/filament-captcha",
+  "name": "danie1net0/filament-captcha",
   "description": "Multi-provider captcha integration for Filament forms (hCaptcha, reCAPTCHA v2/v3, Turnstile)",
   "keywords": [
     "filament",
@@ -9,7 +9,7 @@
     "turnstile",
     "laravel"
   ],
-  "homepage": "https://github.com/ddr/filament-captcha",
+  "homepage": "https://github.com/danie1net0/filament-captcha",
   "license": "MIT",
   "authors": [
     {
