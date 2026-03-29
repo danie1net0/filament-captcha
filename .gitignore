@@ -7,3 +7,16 @@
 .vscode/
 coverage/
 composer.lock
+.junie
+.gemini
+.opencode
+.claude
+.ai
+.cursor
+.mcp.json
+boost.json
+.cursorrules
+opencode.json
+CLAUDE.md
+AGENTS.md
+GEMINI.md
