@@ -46,6 +46,7 @@
     "prettier:fix": "npx prettier --write .",
     "test": "pest",
     "test:coverage": "pest --coverage",
+    "test:coverage:report": "pest --coverage --coverage-html coverage",
     "lint": "pint --test",
     "lint:fix": "pint",
     "analyse": "phpstan analyse --memory-limit=-1",
