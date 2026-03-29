@@ -9,10 +9,16 @@
         script.src = '{{ $getScriptUrl() }}'
         script.async = true
         script.defer = true
-        script.onload = () => this.renderCaptcha()
+        script.onload = () => {
+          grecaptcha.ready(() => {
+            this.renderCaptcha()
+          })
+        }
         document.head.appendChild(script)
       } else {
-        this.renderCaptcha()
+        grecaptcha.ready(() => {
+          this.renderCaptcha()
+        })
       }
     },
     renderCaptcha() {

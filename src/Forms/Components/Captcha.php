@@ -27,7 +27,7 @@ class Captcha extends Field
 
         $this->rules([new CaptchaRule($this->driver)]);
 
-        $this->extraFieldWrapperAttributes(['class' => 'items-center text-center']);
+        $this->extraFieldWrapperAttributes(['style' => 'place-items: center']);
     }
 
     public function driver(string $driver): static
