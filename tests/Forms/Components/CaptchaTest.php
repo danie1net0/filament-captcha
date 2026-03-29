@@ -38,6 +38,28 @@ test('returns null when site key is not configured', function (): void {
     expect($component->getSiteKey())->toBeNull();
 });
 
+test('is hidden when site key is not configured', function (): void {
+    config()->set('captcha.hcaptcha.sitekey');
+
+    $component = Captcha::make('captcha');
+
+    expect($component->isVisible())->toBeFalse();
+});
+
+test('is not required when site key is not configured', function (): void {
+    config()->set('captcha.hcaptcha.sitekey');
+
+    $component = Captcha::make('captcha');
+
+    expect($component->isRequired())->toBeFalse();
+});
+
+test('is visible when site key is configured', function (): void {
+    $component = Captcha::make('captcha');
+
+    expect($component->isVisible())->toBeTrue();
+});
+
 test('returns script url from driver', function (): void {
     $component = Captcha::make('captcha');
 

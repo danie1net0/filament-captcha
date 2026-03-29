@@ -19,9 +19,14 @@ class Captcha extends Field
     {
         parent::setUp();
 
-        $this->required();
-        $this->rules([new CaptchaRule($this->driver)]);
         $this->dehydrated(false);
+
+        $this->visible(fn (): bool => $this->getSiteKey() !== null);
+
+        $this->required(fn (): bool => $this->getSiteKey() !== null);
+
+        $this->rules([new CaptchaRule($this->driver)]);
+
         $this->extraFieldWrapperAttributes(['class' => 'items-center text-center']);
     }
 

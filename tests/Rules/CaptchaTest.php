@@ -27,6 +27,19 @@ test('fails when value is not a string', function (): void {
     expect($failed)->toBeTrue();
 });
 
+test('passes when site key is not configured', function (): void {
+    config()->set('captcha.hcaptcha.sitekey');
+
+    $rule = new Captcha();
+    $failed = false;
+
+    $rule->validate('captcha', '', function () use (&$failed): void {
+        $failed = true;
+    });
+
+    expect($failed)->toBeFalse();
+});
+
 test('passes when secret is not configured', function (): void {
     config()->set('captcha.hcaptcha.secret');
 

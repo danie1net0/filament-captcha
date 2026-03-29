@@ -16,16 +16,20 @@ class Captcha implements ValidationRule
 
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
+        /** @var CaptchaManager $manager */
+        $manager = resolve(CaptchaManager::class);
+
+        $driver = $manager->driver($this->driver);
+
+        if ($driver->getSiteKey() === null) {
+            return;
+        }
+
         if (! is_string($value) || $value === '') {
             $fail(__('filament-captcha::messages.required'));
 
             return;
         }
-
-        /** @var CaptchaManager $manager */
-        $manager = resolve(CaptchaManager::class);
-
-        $driver = $manager->driver($this->driver);
 
         if (! $driver->verify($value)) {
             $fail(__('filament-captcha::messages.failed'));
