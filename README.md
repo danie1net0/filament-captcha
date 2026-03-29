@@ -1,7 +1,7 @@
 # Filament Captcha
 
-[![Latest Version](https://img.shields.io/packagist/v/danie1net0/filament-captcha.svg?style=flat-square)](https://packagist.org/packages/danie1net0/filament-captcha)
-[![Total Downloads](https://img.shields.io/packagist/dt/danie1net0/filament-captcha.svg?style=flat-square)](https://packagist.org/packages/danie1net0/filament-captcha)
+[![Latest Version](https://img.shields.io/packagist/v/ddr/filament-captcha.svg?style=flat-square)](https://packagist.org/packages/ddr/filament-captcha)
+[![Total Downloads](https://img.shields.io/packagist/dt/ddr/filament-captcha.svg?style=flat-square)](https://packagist.org/packages/ddr/filament-captcha)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/danie1net0/filament-captcha/tests.yml?branch=master&label=tests&style=flat-square)](https://github.com/danie1net0/filament-captcha/actions?query=workflow%3Atests+branch%3Amaster)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/danie1net0/filament-captcha/code-style.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/danie1net0/filament-captcha/actions?query=workflow%3A"code-style"+branch%3Amaster)
 [![License](https://img.shields.io/github/license/danie1net0/filament-captcha.svg?style=flat-square)](https://github.com/danie1net0/filament-captcha/blob/master/LICENSE)
@@ -16,6 +16,12 @@ Multi-provider captcha integration for Filament forms, supporting hCaptcha, reCA
 - 🧪 Comprehensive test coverage
 - 📦 Compatible with Filament v3, v4 and v5
 - 🔧 Development mode support
+
+## Requirements
+
+- PHP ^8.2
+- Laravel 11, 12 or 13
+- Filament 3, 4 or 5
 
 ## Installation
 
@@ -149,7 +155,11 @@ $request->validate([
 
 ## Development Mode
 
-When the secret key is not configured for your chosen driver, the captcha will be displayed but validation will be skipped. This is useful for local development.
+The captcha field adapts its behavior based on which credentials are configured:
+
+- **No site key configured**: the field is completely hidden and validation is skipped, allowing forms to work without any captcha setup.
+- **Site key configured, no secret key**: the widget is displayed but server-side verification is skipped. Useful for testing the UI locally.
+- **Both keys configured**: full captcha flow with server-side verification (production).
 
 ## Customization
 
