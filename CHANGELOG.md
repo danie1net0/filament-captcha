@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/danie1net0/filament-captcha/compare/v1.1.0...v1.1.1) (2026-03-29)
+
+
+### Bug Fixes
+
+* **captcha:** skip field rendering and validation when site key is not configured ([057f05a](https://github.com/danie1net0/filament-captcha/commit/057f05ac04731f3e4fd60885afd19e646ec36071))
+
 # [1.1.0](https://github.com/danie1net0/filament-captcha/compare/v1.0.1...v1.1.0) (2026-03-29)
 
 
