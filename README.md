@@ -14,7 +14,7 @@ Multi-provider captcha integration for Filament forms, supporting hCaptcha, reCA
 - 🎨 Seamless integration with Filament forms
 - ⚙️ Driver-based architecture for easy extension
 - 🧪 Comprehensive test coverage
-- 📦 Compatible with Filament v3 and v4
+- 📦 Compatible with Filament v3, v4 and v5
 - 🔧 Development mode support
 
 ## Installation

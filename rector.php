@@ -34,7 +34,7 @@ return RectorConfig::configure()
     ->withSets([
         SetList::TYPE_DECLARATION,
         LevelSetList::UP_TO_PHP_82,
-        LaravelSetList::LARAVEL_110,
+        LaravelSetList::LARAVEL_130,
         LaravelSetList::LARAVEL_CODE_QUALITY,
         LaravelSetList::LARAVEL_ARRAY_STR_FUNCTION_TO_STATIC_CALL,
         LaravelSetList::LARAVEL_ELOQUENT_MAGIC_METHOD_TO_QUERY_BUILDER,
