@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/danie1net0/filament-captcha/compare/v1.0.1...v1.1.0) (2026-03-29)
+
+
+### Features
+
+* add support for Laravel 13, Livewire 4 and Filament 5 ([9533e9f](https://github.com/danie1net0/filament-captcha/commit/9533e9fa8338ea0d1ff19ae4d5041a05b22ce7ee))
+
 ## [1.0.1](https://github.com/danie1net0/filament-captcha/compare/v1.0.0...v1.0.1) (2025-12-23)
 
 ### Bug Fixes
