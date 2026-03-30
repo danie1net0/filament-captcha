@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/danie1net0/filament-captcha/compare/v1.1.1...v1.1.2) (2026-03-30)
+
+
+### Bug Fixes
+
+* **captcha:** center widget in form and fix reCAPTCHA v2 rendering ([edc9dfb](https://github.com/danie1net0/filament-captcha/commit/edc9dfb8806e275c796359caadac01dafdd7f25a))
+
 ## [1.1.1](https://github.com/danie1net0/filament-captcha/compare/v1.1.0...v1.1.1) (2026-03-29)
 
 ### Bug Fixes
